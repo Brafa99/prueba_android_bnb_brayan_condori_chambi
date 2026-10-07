@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/green_primary">
 
+    <!-- Header superior -->
     <LinearLayout
         android:id="@+id/headerAuth"
         android:layout_width="match_parent"
@@ -36,6 +37,7 @@
             android:layout_height="28dp" />
     </LinearLayout>
 
+    <!-- Indicador Paso 2 / 6 -->
     <LinearLayout
         android:id="@+id/stepAuthLayout"
         android:layout_width="match_parent"
@@ -70,6 +72,7 @@
             android:progressTint="@color/white" />
     </LinearLayout>
 
+    <!-- Tarjeta blanca principal -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -87,13 +90,25 @@
             android:padding="24dp"
             android:gravity="center_horizontal">
 
+            <!-- Icono altavoz superior derecho -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="🔊"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:gravity="center"
-                android:text="Antes de comenzar con la prueba de autenticación, te recomendamos:"
-                android:textColor="@color/text_dark"
+                android:text="Antes de comenzar con la prueba de autenticación,\nte recomendamos:"
+                android:textColor="#5A2E8A"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -104,41 +119,24 @@
                 android:gravity="center"
                 android:text="Sitúate en un lugar con buena iluminación."
                 android:textColor="@color/text_gray"
-                android:textSize="13sp" />
+                android:textSize="14sp" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:orientation="horizontal"
-                android:gravity="center">
+            <!-- Asset PNG con los dos muñecos y focos -->
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="24dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_iluminacion_recomendada" />
 
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="110dp"
-                    android:background="@drawable/bg_input"
-                    android:gravity="center"
-                    android:text="💡\nIluminación\nArtificial"
-                    android:textSize="12sp"
-                    android:textColor="@color/text_dark" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="110dp"
-                    android:layout_marginStart="24dp"
-                    android:background="@drawable/bg_input"
-                    android:gravity="center"
-                    android:text="☀️\nLuz\nNatural"
-                    android:textSize="12sp"
-                    android:textColor="@color/text_dark" />
-            </LinearLayout>
-
+            <!-- Indicador Paginador (● ○ ○ ○) -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:text="● ○ ○"
-                android:textColor="@color/green_primary"
+                android:layout_marginTop="20dp"
+                android:text="● ○ ○ ○"
+                android:textColor="#5A2E8A"
                 android:textSize="18sp"
                 android:letterSpacing="0.2" />
 
@@ -147,6 +145,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1" />
 
+            <!-- Botón Siguiente inferior -->
             <Button
                 android:id="@+id/btnSiguienteAuth"
                 android:layout_width="match_parent"
