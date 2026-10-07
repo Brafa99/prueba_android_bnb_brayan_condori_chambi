@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_card_white">
+
+    <TextView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_input"
+        android:gravity="center"
+        android:text="!"
+        android:textColor="#E65100"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Activa tu ubicación"
+        android:textColor="@color/text_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Para continuar con la creación de tu Bille, es necesario que actives la ubicación en tu dispositivo."
+        android:textColor="@color/text_gray"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btnActivarUbicacion"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_green"
+        android:text="Continuar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:backgroundTint="@null" />
+
+    <TextView
+        android:id="@+id/btnCancelarUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="8dp"
+        android:text="Cancelar"
+        android:textColor="@color/text_gray"
+        android:textSize="14sp" />
+</LinearLayout>
