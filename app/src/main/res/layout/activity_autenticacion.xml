@@ -150,7 +150,7 @@
                 android:id="@+id/btnSiguienteAuth"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
-                android:background="@drawable/btn_green"
+                android:background="@drawable/bt_green"
                 android:text="Siguiente"
                 android:textAllCaps="false"
                 android:textColor="@color/white"

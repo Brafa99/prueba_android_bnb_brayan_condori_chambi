@@ -40,11 +40,11 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/btn_green"
+        android:background="@drawable/bt_green"
         android:text="Continuar"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        app:backgroundTint="@null" />
+         />
 
     <TextView
         android:id="@+id/btnCancelarUbicacion"
