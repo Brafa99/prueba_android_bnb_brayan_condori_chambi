@@ -97,7 +97,6 @@ public class MainActivity extends AppCompatActivity {
         String carnet = etCarnet.getText().toString().trim();
         String complemento = etComplemento.getText().toString().trim();
 
-        // 1. Validar Celular (Máximo 8 caracteres numéricos)
         if (celular.isEmpty()) {
             tvErrorCelular.setText("El número de celular es requerido");
             tvErrorCelular.setVisibility(View.VISIBLE);
@@ -108,7 +107,6 @@ public class MainActivity extends AppCompatActivity {
             esValido = false;
         }
 
-        // 2. Validar Carnet (Máximo 10 caracteres numéricos)
         if (carnet.isEmpty()) {
             tvErrorCarnet.setText("El número de carnet es requerido");
             tvErrorCarnet.setVisibility(View.VISIBLE);
@@ -119,7 +117,6 @@ public class MainActivity extends AppCompatActivity {
             esValido = false;
         }
 
-        // 3. Validar Complemento si está activo (2 caracteres letras y números)
         if (cbTieneComplemento.isChecked()) {
             if (complemento.isEmpty()) {
                 tvErrorComplemento.setText("Ingresa el complemento");
