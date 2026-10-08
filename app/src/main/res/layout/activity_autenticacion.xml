@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:background="@color/green_primary">
 
-    <!-- Header superior -->
     <LinearLayout
         android:id="@+id/headerAuth"
         android:layout_width="match_parent"
@@ -36,8 +35,6 @@
             android:layout_width="28dp"
             android:layout_height="28dp" />
     </LinearLayout>
-
-    <!-- Indicador Paso 2 / 6 -->
     <LinearLayout
         android:id="@+id/stepAuthLayout"
         android:layout_width="match_parent"
@@ -72,7 +69,6 @@
             android:progressTint="@color/white" />
     </LinearLayout>
 
-    <!-- Tarjeta blanca principal -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -90,7 +86,6 @@
             android:padding="24dp"
             android:gravity="center_horizontal">
 
-            <!-- Icono altavoz superior derecho -->
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -121,7 +116,6 @@
                 android:textColor="@color/text_gray"
                 android:textSize="14sp" />
 
-            <!-- Asset PNG con los dos muñecos y focos -->
             <ImageView
                 android:layout_width="260dp"
                 android:layout_height="200dp"
@@ -129,8 +123,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_iluminacion_recomendada" />
-
-            <!-- Indicador Paginador (● ○ ○ ○) -->
+            
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -145,7 +138,6 @@
                 android:layout_height="0dp"
                 android:layout_weight="1" />
 
-            <!-- Botón Siguiente inferior -->
             <Button
                 android:id="@+id/btnSiguienteAuth"
                 android:layout_width="match_parent"
