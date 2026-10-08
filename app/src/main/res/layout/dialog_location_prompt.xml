@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:gravity="center"
-        android:text="Para continuar con la creación de tu Bille, es necesario que actives la ubicación en tu dispositivo."
+        android:text="Para continuar con la creación de tu cuenta, es necesario que actives la ubicación en tu dispositivo."
         android:textColor="@color/text_gray"
         android:textSize="13sp" />
 
